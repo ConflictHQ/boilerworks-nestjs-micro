@@ -35,7 +35,7 @@ NestJS 11 (Fastify)
 - All responses wrapped in `ApiResponse<T>`: `{ ok, data, message, errors }`
 - class-validator DTOs on all inputs
 - Swagger decorators on all controllers
-- Rate limiting: 10 requests per 60 seconds (configurable via env)
+- Rate limiting: 10 requests per 60 seconds (hardcoded in `src/app.module.ts`)
 
 ### Testing
 - Vitest integration tests with real Postgres

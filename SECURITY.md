@@ -25,9 +25,9 @@ We will acknowledge your report within 48 hours and aim to release a fix within 
 
 When deploying Boilerworks:
 
-- Change all default credentials (database, MinIO, session secret)
+- Change the default database credentials (`DATABASE_URL`)
+- Set `API_KEY_SEED` to a random value before first boot and rotate the seeded admin key
 - Use HTTPS in production
 - Set `NODE_ENV=production`
-- Configure `CORS_ORIGINS` to your domain only
-- Use strong Auth0 credentials
-- Review the security hardening in `bootstrap.md`
+- Scope API keys narrowly — avoid the `*` wildcard outside admin tooling
+- Review the security conventions in `bootstrap.md`

@@ -2,9 +2,9 @@
   "name": "boilerworks-nestjs-micro",
   "version": "0.0.1",
   "description": "Boilerworks NestJS microservice template",
-  "author": "",
+  "author": "Conflict LLC",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "start": "nest start",
